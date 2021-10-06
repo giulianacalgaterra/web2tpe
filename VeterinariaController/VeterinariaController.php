@@ -9,7 +9,7 @@ class VeterinariaController{
 
     function __construct(){
         $this->model = new VeterinariaModel();
-    //$this->view = new VeterinariaView();
+        //$this->view = new VeterinariaView();
     }
 
     function showHome(){

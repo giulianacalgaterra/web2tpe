@@ -13,7 +13,7 @@ class VeterinariaModel{
         $tareas = $sentencia->fetchAll(PDO::FETCH_OBJ);
         return $tareas;
     }
-    
+
     //mostrar un cliente
 
     //agregar un cliente
