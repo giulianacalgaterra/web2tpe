@@ -14,7 +14,16 @@ header{
     grid-template-columns: 1fr 1fr;
     grid-area: header;
 }
-.container-button{
+footer{
+    grid-area: footer;
+}    
+footer{
+    padding: 4rem 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+/* .container-button{
     justify-self: end;
 }
 nav, .table-desktop{
@@ -39,18 +48,11 @@ nav ul{
 main{
     grid-area: main;
 }
-footer{
-    grid-area: footer;
-}    
+
 footer ul li{
     padding: 2px;
 }
-footer{
-    padding: 4rem 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    }
+
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -204,9 +206,9 @@ caption{
     border-radius: 5px;
     padding: 5px;
 }
-
+/*
 @media screen and (min-width: 660px) {
-    /* copiar y pegar todo lo del css hecho anteriormente */
+     copiar y pegar todo lo del css hecho anteriormente 
     body{
         padding-top: 85px;
     }
