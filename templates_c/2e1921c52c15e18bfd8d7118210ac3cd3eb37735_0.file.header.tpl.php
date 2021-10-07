@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-07 01:41:23
+/* Smarty version 3.1.39, created on 2021-10-07 03:07:28
   from 'D:\xampp\htdocs\web2tpe\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_615e3423e1b424_87245738',
+  'unifunc' => 'content_615e48507932f2_34513943',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2e1921c52c15e18bfd8d7118210ac3cd3eb37735' => 
     array (
       0 => 'D:\\xampp\\htdocs\\web2tpe\\templates\\header.tpl',
-      1 => 1633563680,
+      1 => 1633568532,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_615e3423e1b424_87245738 (Smarty_Internal_Template $_smarty_tpl) {
+function content_615e48507932f2_34513943 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -37,36 +37,21 @@ function content_615e3423e1b424_87245738 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 
 <body>
-<div class="pagina">
-    <nav class="nav-list" id="nav-menu">
-        <div class="top-nav-column">
-            <span>ACA VA EL LOGO</span>
-        </div>
-        <div class="list-nav-column">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="clientes">Lista de clientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ingresar">Ingresar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Cerrar sesion</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <div class="title">
-            <h1>Titulo</h1>
-        </div>
-        <div class="login">
-            <input type="text" placeholder="Usuario">
-            <input type="password" placeholder="Contraseña">
-            <button type="submit" class="btn btn-login">Login</button>
-        </div>
-    </header><?php }
+    <div class="pagina">
+        <header>
+            <div class="logo-imagen"><img src="images/logo2original.jpg" alt="logo" height="85px"></div>
+            <nav>
+                <ul>
+                    <li><a aria-current="page" href="home">Home</a></li>
+                    <li><a href="clientes">Lista de clientes</a></li>
+                    <li><a href="ingresar">Ingresar</a></li>
+                    <li><a href="">Cerrar sesion</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <button type="submit" class="btn btn-login">Login</button>
+            </div>
+</header><?php }
 }

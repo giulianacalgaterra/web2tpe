@@ -9,35 +9,71 @@ body{
             "main main"
             "footer footer";
 }
+main{
+    grid-area: main;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    text-align: center;
+   
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+i {
+    width: 35px;
+}
+li{
+    display: block;
+    list-style: none;
+}
 header{
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-area: header;
+    background: rgb(255, 255, 255);
+    padding: 0.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 footer{
     grid-area: footer;
-}    
-footer{
     padding: 4rem 0; 
     left: 0;
     right: 0;
     bottom: 0;
+    background: #f0a056;
+    text-align: center;
+}    
+    footer ul li{
+        padding: 2px;
     }
-/* .container-button{
-    justify-self: end;
-}
-nav, .table-desktop{
-    display: none;
-}
-nav.show{
-    display: flex;
-}
-h2{
-    font-size: 16px;
+
+.imagen-servicios{
+        background-image: url(../images/clinicaveterinaria.jpg);
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        background-size: cover; 
+        padding-top: 230px; 
+    }
+nav {
+    justify-content: space-between;
+    align-items:center;
+
 }
 nav ul{
     margin: 0;
     padding: 0;
+    
  }
         nav ul li a{
             display: block;
@@ -45,378 +81,6 @@ nav ul{
             border-radius: 5px;
             }
 
-main{
-    grid-area: main;
-}
-
-footer ul li{
-    padding: 2px;
-}
-
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.imagen-servicios,.imagen-index{
-    background-size: cover;
-}
-.imagen-index{
-    background-image: url(../images/imagen-index.jpg);
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-}
-.imagen-servicios{
-    background-image: url(../images/clinicaveterinaria.jpg);
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;  
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-li{
-    display: block;
-    list-style: none;
-}
-.main-inicio, .main-servicios, form, footer{
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-form{
-    padding: 90px;
-    margin:0 auto;
-}
-table{
-    margin: auto;
-}
-footer, nav ul li a:hover, .userInput, .userInput .btn, .security-check, .resaltado, footer {
-    background: #f0a056;
-}
-label, input{
-    padding-top: 10px;
-}
-.boton-sexo{
-    display: inline-block;
-}
-.formulario li{
-    padding: 10px;
-}
-.contactenos-formulario, .captcha-container, main, header {
-    background: white;
-}
-.contactenos-formulario{
-    width: 239px;
-    margin: auto;
-    border: black solid 2px;
-    border-radius: 15px;
-    padding: 0;
-}
-.captcha-container{
+header, nav, nav ul {
     display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    margin: auto;
-}
-.security-check{
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    border-radius: 20px 20px 0 0;
-}
-.securityCode{
-    background: url(../images/vete.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative; 
-}
-.securityCode p{
-    text-align: center;
-    line-height: 100px;
-    font-family: "Monserrat", sans-serif;
-    font-size: 3vw;
-    font-weight: bold;
-    letter-spacing: 10px;
-    user-select: none;
-}
-.icons{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-}
-.icons .fas{
-    font-size: 1.5rem;
-    padding: 10px 5px;
-    cursor:pointer;
-    transition: 0.15s ease;
-}
-.icons .fas:hover{
-    color: #f0a056;
-}
-.userInput{
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    border-radius: 0 0 20px 20px;
-
-}
-.userInput input, .userInput .btn{
-    outline: none;
-    border: solid 2.5px gray;
-    padding: 5px;
-    font-size: 1.2rem;
-} 
-.userInput input{
-    border-radius: 20px 0 0 20px;
-    border-right: none;
-    width: 60%;
-}
-.userInput .btn{
-    border: none;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-    transition: 0.15s ease;   
-}
-.userInput .btn:hover{
-    background: #e97b14;
-}
-i {
-    width: 35px;
-}
-.tabla-dinamica{
-    background-image: url(../images/huella.jpg);
-}
-.tabla{
-    border: 1px solid black;
-}
-.body-tabla-dinamica, .telefono-emergencia{
-    background-color: blanchedalmond;
-}
-caption{
-    font-size: 24px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px;
-}
-.telefono-emergencia{
-    font-weight: 800;
-    color: #e97b14;
-    border-radius: 5px;
-    padding: 5px;
-}
-/*
-@media screen and (min-width: 660px) {
-     copiar y pegar todo lo del css hecho anteriormente 
-    body{
-        padding-top: 85px;
-    }
-    h1 {
-        font-size: 3em;
-        line-height: 1.3em;
-        margin: 15px 0;
-        text-align: center;
-        font-weight: 300;
-    }
-    p {
-        margin: 0 0 0;
-    }
-    header {
-        background: rgb(255, 255, 255);
-        padding: 0.5rem;
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        }
-    a{
-        text-decoration: none;
-    }
-    footer, nav ul li a:hover, .userInput, .userInput .btn, .security-check, .resaltado {
-        background: #f0a056;
-    }
-    footer{
-            padding: 4rem 0; 
-            left: 0;
-            right: 0;
-            bottom: 0;
-            }
-    a, footer{
-        color: black;
-    }
-    footer ul li{
-        padding: 2px;
-    }
-         nav ul{
-            margin: 0;
-            padding: 0;
-            transition: 0.5;
-         }
-                nav ul li a{
-                    display: block;
-                    padding: 0.5rem 1rem;
-                    border-radius: 5px;
-                    }
-    li{
-        list-style: none;
-    }
-    
-    .main-contactenos{
-        background-image: url(../images/huella.jpg);
-        background-repeat: repeat;
-        
-    }
-    .main-servicios{
-        background-image: url(../images/clinicaveterinaria.jpg);
-    }
-    .main-inicio{
-        background-image: url(../images/pinturaveterinarioo.jpg);
-        color:white;
-    }
-    
-    .main-inicio, .main-servicios, form, footer{
-        background-size: cover;
-        background-position-x: center;
-        background-repeat: no-repeat;
-        text-align: center;
-    }
-    table{
-        margin: auto;
-    }
-    form{
-        padding: 90px;
-        margin:0 auto;
-    }
-    label, input{
-        padding-top: 10px;
-    }
-    .boton-sexo, nav ul li{
-        display: inline-block;
-    }
-    .formulario li{
-        padding: 10px;
-    }
-    
-    i {
-        width: 35px;
-    }
-    
-    main.main-servicios {
-        padding: 10px 0;
-    }
-    .main-inicio div{
-         padding: 20px 0;
-    }
-    .texto-principal, .texto-principal-servicios{
-       width: 37%;
-       text-align: justify;
-    }
-    ul{
-        margin-bottom: 0px;
-    }
-    .contactenos-formulario, .captcha-container{
-        background: white;
-    }
-    .contactenos-formulario{
-        width: 239px;
-        margin: auto;
-        border: black solid 2px;
-        border-radius: 15px;
-        padding: 0;
-    }
-    .captcha-container{
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        margin: auto;
-    }
-    .security-check{
-        margin: 5px;
-        padding: 5px;
-        text-align: center;
-        border-radius: 20px 20px 0 0;
-    }
-    .securityCode{
-        background: url(../images/vete.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: relative; 
-    }
-    .securityCode p{
-        text-align: center;
-        line-height: 100px;
-        font-family: "Monserrat", sans-serif;
-        font-size: 3vw;
-        font-weight: bold;
-        letter-spacing: 10px;
-        user-select: none;
-    }
-    .icons{
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-    }
-    .icons .fas{
-        font-size: 1.5rem;
-        padding: 10px 5px;
-        cursor:pointer;
-        transition: 0.15s ease;
-    }
-    .icons .fas:hover{
-        color: #f0a056;
-    }
-    .userInput{
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        border-radius: 0 0 20px 20px;
-    
-    }
-    .userInput input, .userInput .btn{
-        outline: none;
-        border: solid 2.5px gray;
-        padding: 5px;
-        font-size: 1.2rem;
-    } 
-    .userInput input{
-        border-radius: 20px 0 0 20px;
-        border-right: none;
-        width: 60%;
-    }
-    .userInput .btn{
-        border: none;
-        border-radius: 0 20px 20px 0;
-        cursor: pointer;
-        transition: 0.15s ease;   
-    }
-    .userInput .btn:hover{
-        background: #e97b14;
-    }
-    .Clinica-veterinaria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #boton-hamburguesa, .imagen-index, .imagen-servicios,.table-mobile{
-        display: none;
-    }
-    nav,.table-desktop{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .telefono-emergencia{
-        font-weight: 800;
-        color: #e97b14;
-        background: blanchedalmond;
-        border-radius: 5px;
-        padding: 5px;
-    }
 }
