@@ -18,4 +18,18 @@ class VeterinariaController{
         $this->view->showClientes($clientes, $mascotas);
     }
     
+    function createCliente(){
+        $this->model->insertCliente($_POST[NULL], $_POST['nombre'], $_POST['apellido'], $_POST['dni']);
+        $this->model->insertMascotas($_POST[NULL], $_POST['nombre'], $_POST['dni_cliente']);
+        $clientes=$this->model->getClientes();
+        $mascotas=$this->model->getMascotas();
+        $this->view->ingresar($clientes, $mascotas);
+        $this->view->showClienteLocation();
+    }
+
+    function ingresarCliente(){
+        $clientes=$this->model->getClientes();
+        $mascotas=$this->model->getMascotas();
+        $this->view->ingresar($clientes, $mascotas);
+    }
 }

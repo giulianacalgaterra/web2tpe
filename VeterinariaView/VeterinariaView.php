@@ -14,4 +14,13 @@ class VeterinariaView{
         $this->smarty->display('templates/home.tpl');
     }
 
+    function ingresar($clientes, $mascotas){
+        $this->smarty->assign('clientes', $clientes);
+        $this->smarty->assign('mascotas', $mascotas);
+        $this->smarty->display('templates/createCliente.tpl');
+     }
+     
+     function showClienteLocation(){
+        header("Location: ".BASE_URL."ingresar");
+    }
 }

@@ -84,3 +84,9 @@ nav ul{
 header, nav, nav ul {
     display: flex;
 }
+
+div.formulario{
+    grid-area: main;
+}
+
+

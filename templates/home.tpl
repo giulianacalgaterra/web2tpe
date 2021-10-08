@@ -5,43 +5,56 @@
     <main>
         <div class="imagen-servicios">
         <div class="texto-importante">
-            <h1>Mascotas</h1>
-            <ul>
+        <table class="table-desktop">
+            <thead>
+                <tr>
+                    <h1>Listado de Clientes-Mascotas</h1>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td></td>
+                    <td colspan="2">Clientes</td>
+                    <td colspan="2">Mascotas</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Dni</td>
+                    <td>Fecha de alta</td>
+                    <td>Fecha de actualizacion</td>
+                    <td>Id</td>
+                    <td>Nombre </td>
+                    <td>Dni Cliente</td>
+                    <td>Fecha de alta</td>
+                    <td>Fecha de actualizacion</td>
+                </tr>
+                <tr>
+                     {foreach from=$clientes item=$cliente}
+                    <td></td>
+                    <td>{$cliente->nombre}</td>
+                    <td>{$cliente->apellido}</td>
+                    <td>{$cliente->dni}</td>
+                    <td>{$cliente->fecha_de_alta}</td>
+                    <td>{$cliente->fecha_de_actualizacion}</td>
+                    {/foreach}
+                </tr>
+                <tr></tr>
+                <tr>
                 {foreach from=$mascotas item=$mascota}
-                    <li>
-                        {$mascota->nombre}
-                    </li>
-                    <li>
-                        {$mascota->dni_cliente}
-                    </li>
-                    <li>
-                        {$mascota->fecha_de_alta}
-                    </li>
-                    <li>
-                        {$mascota->fecha_de_actualizacion}
-                    </li>
+                     <td></td>
+                     <td>{$mascota->id}</td>
+                     <td>{$mascota->nombre}</td>
+                     <td>{$mascota->dni_cliente}</td>
+                     <td>{$mascota->fecha_de_alta}</td>
+                     <td>{$mascota->fecha_de_actualizacion}</td> 
+                    {/foreach}
+                </tr>
 
-                {/foreach}
-
-            </ul>
-            <h1>clientes</h1>
-            <ul>
-                {foreach from=$clientes item=$cliente}
-                    <li>
-                        {$cliente->nombre}
-                        {$cliente->apellido}
-                    </li>
-                    <li>
-                        {$cliente->dni}
-                    </li>
-                    <li>
-                        {$cliente->fecha_de_alta}
-                    </li>
-                    <li>
-                        {$cliente->fecha_de_actualizacion}
-                    </li>
-                {/foreach}
-            </ul>
+            </tbody>
+        </table> 
         </div>
         </div>
         
