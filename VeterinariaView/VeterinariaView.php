@@ -28,4 +28,9 @@ class VeterinariaView{
         $this->smarty->assign('clientes', $clientes);
         $this->smarty->display('templates/cliente.tpl');
      }
+
+     function showMascota($mascotas){
+        $this->smarty->assign('mascotas', $mascotas);
+        $this->smarty->display('templates/mascota.tpl');
+     }
 }
