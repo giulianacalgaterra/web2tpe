@@ -23,4 +23,9 @@ class VeterinariaView{
      function showClienteLocation(){
         header("Location: ".BASE_URL."ingresar");
     }
+
+    function showCliente($clientes){
+        $this->smarty->assign('clientes', $clientes);
+        $this->smarty->display('templates/cliente.tpl');
+     }
 }

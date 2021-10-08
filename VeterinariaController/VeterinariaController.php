@@ -17,7 +17,12 @@ class VeterinariaController{
         $mascotas = $this->model->getMascotas();
         $this->view->showClientes($clientes, $mascotas);
     }
-    
+
+    function viewCliente($dni){
+        $clientes = $this->model->getClientes($dni);
+        $this->view->showCliente($clientes);
+    }
+
     function createCliente(){
         $this->model->insertCliente($_POST[NULL], $_POST['nombre'], $_POST['apellido'], $_POST['dni']);
         $this->model->insertMascotas($_POST[NULL], $_POST['nombre'], $_POST['dni_cliente']);

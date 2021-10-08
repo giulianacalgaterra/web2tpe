@@ -29,6 +29,10 @@ $VeterinariaController = new VeterinariaController();
     case 'ingresar':
         $VeterinariaController->ingresarCliente();
         break;
+
+    case 'viewcliente':
+            $VeterinariaController->viewCliente($params[1]);
+            break;
     default: 
         echo('404 Page not found'); 
         break;
