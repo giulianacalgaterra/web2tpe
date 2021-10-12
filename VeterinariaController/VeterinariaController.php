@@ -21,7 +21,7 @@ class VeterinariaController{
     }
     //funcion mostrar un cliente     
     function viewCliente($dni){
-        $clientes = $this->model->getClientes($dni);
+        $clientes = $this->model->getCliente($dni);
         $this->view->showCliente($clientes);
     }
     //funcion crear un cliente y su mascota
@@ -32,6 +32,7 @@ class VeterinariaController{
         $mascotas=$this->model->getMascotas();
         $this->view->ingresar($clientes, $mascotas);
         $this->view->showClienteLocation();
+        //$this->view->showClientes($clientes, $mascotas);
     }
     //funcion ingresar un cliente y su mascota
     function ingresarCliente(){
