@@ -16,7 +16,7 @@ class VeterinariaModel{
 
     //mostrar un cliente
     function getCliente($dni){
-        $sentencia = $this->db->prepare( "SELECT clientes.nombre, clientes.apellido, clientes.dni, clientes.fecha_de_alta, clientes.fecha_de_actualizacion FROM clientes INNER JOIN mascotas ON m.dni_cliente = c.dni WHERE c.dni = ${dni};");
+        $sentencia = $this->db->prepare( "SELECT clientes.nombre, clientes.apellido, clientes.dni, clientes.fecha_de_alta, clientes.fecha_de_actualizacion FROM clientes INNER JOIN mascotas ON m.dni_cliente = c.dni WHERE dni=?;");
         $sentencia->execute(array($dni));
         $tarea = $sentencia->fetch(PDO::FETCH_OBJ);
         return $tarea;
