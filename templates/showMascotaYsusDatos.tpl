@@ -16,14 +16,14 @@
                 </tr>
             </thead>
             <tbody>
-                {foreach from=$todasLasMascotas item=$Mascotas}
+                {foreach from=$todasLasMascotas item=$Mascota}
             <tr>
                 
-                <td colspan="2">{$Mascotas->id}</td>
-                <td colspan="2">{$Mascotas->nombre_mascota}</td>
-                <td colspan="2">{$Mascotas->dni_cliente}</td>
-                <td colspan="2">{$Mascotas->fecha_de_alta}</td>
-                <td colspan="2">{$Mascotas->fecha_de_actualizacion}</td>
+                <td colspan="2">{$Mascota->id}</td>
+                <td colspan="2">{$Mascota->nombre}</td>
+                <td colspan="2">{$Mascota->dni_cliente}</td>
+                <td colspan="2">{$Mascota->fecha_de_alta}</td>
+                <td colspan="2">{$Mascota->fecha_de_actualizacion}</td>
                 
             </tr>   
                 {/foreach} 
