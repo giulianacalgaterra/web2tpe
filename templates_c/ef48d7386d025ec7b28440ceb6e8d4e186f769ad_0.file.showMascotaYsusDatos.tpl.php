@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-13 03:17:19
+/* Smarty version 3.1.39, created on 2021-10-13 15:40:59
   from 'D:\xampp\htdocs\web2tpe\templates\showMascotaYsusDatos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6166339fe5d6d0_91351547',
+  'unifunc' => 'content_6166e1eb39cab7_68260112',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ef48d7386d025ec7b28440ceb6e8d4e186f769ad' => 
     array (
       0 => 'D:\\xampp\\htdocs\\web2tpe\\templates\\showMascotaYsusDatos.tpl',
-      1 => 1634087836,
+      1 => 1634132455,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_6166339fe5d6d0_91351547 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6166e1eb39cab7_68260112 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -65,14 +65,12 @@ $_smarty_tpl->tpl_vars['Mascota']->do_else = false;
                 <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?> 
-            </tbody>
-               
-              
+            </tbody>   
         </table> 
         </div>
 
 <div>
-    <input type="text" class="inputBuscar">
+    <input placeholder="Id" type="text" class="inputBuscar">
     <button class="btnBuscar">Buscar</button>
     <button class="btn-recargar"><i class="fas fa-sync-alt"></i></button>
     <a href="mascota-con-cliente" > Volver </a>

@@ -27,14 +27,12 @@
                 
             </tr>   
                 {/foreach} 
-            </tbody>
-               
-              
+            </tbody>   
         </table> 
         </div>
 
 <div>
-    <input type="text" class="inputBuscar">
+    <input placeholder="Id" type="text" class="inputBuscar">
     <button class="btnBuscar">Buscar</button>
     <button class="btn-recargar"><i class="fas fa-sync-alt"></i></button>
     <a href="mascota-con-cliente" > Volver </a>

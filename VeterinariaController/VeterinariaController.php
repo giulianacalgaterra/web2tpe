@@ -22,7 +22,7 @@ class VeterinariaController{
     //funcion mostrar todas las mascotas
     function viewMascotas(){
         $todasLasMascotas = $this->model->getMascotas();
-        $this->view->showMascotaYsusDatos($todasLasMascotas);
+        $this->view->showMascotasYsusDatos($todasLasMascotas);
     }
 
 
@@ -57,7 +57,7 @@ class VeterinariaController{
     //funcion mostrar una mascota por id
     function showMascotaYsusDatos($id){
         $showMascotaYsusDatos = $this->model->getMascotaYsusDatos($id);
-        $this->view->showMascotaYsusDatos($showMascotaYsusDatos);
+        $this->view->showMascotasYsusDatos($showMascotaYsusDatos);
     
     }
 }
