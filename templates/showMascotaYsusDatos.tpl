@@ -1,36 +1,37 @@
 {include file='templates/header.tpl'}
+{include_php file='./VeterinariaController/mostrarporid.php' }
 
-<div class="todos-datos-mascota">
-        <table class="table-mascotas">
-        <h1>Listado de Mascotas</h1>
-            <thead>
-                <tr>
-                <th></th><th colspan="2">Id</th>
-                <th colspan="2">Nombre </th>
-                <th colspan="2">Dni Cliente</th>
-                <th colspan="2">Fecha de alta</th>
-                <th colspan="2">Fecha de actualizacion</th>
-                <th colspan="2">Nombre</th>
-                <th colspan="2">Apellido</th>
-                <th colspan="2">Dni</th>
-                <th colspan="2">Fecha de alta</th>
-                <th colspan="2">Fecha de actualizacion</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-                {foreach from=$todasLasMascotas item=$Mascota}
-            <tr>
-                
-                <td colspan="2">{$Mascota->id}</td>
-                <td colspan="2">{$Mascota->nombre}</td>
-                <td colspan="2">{$Mascota->dni_cliente}</td>
-                <td colspan="2">{$Mascota->fecha_de_alta}</td>
-                <td colspan="2">{$Mascota->fecha_de_actualizacion}</td>
-                
-            </tr>   
-                {/foreach} 
-            </tbody>   
-        </table> 
-        </div>
+<div class="datos-mascota">
+        
+        <ul>
+            
+                <li><label for="id">ID:</label></li>
+                <li><label for="nombre">Nombre:</label></li>
+                <li><label for="dni-dueño">Dni Dueño:</label></li>
+                <li><label for="fecha-de-alta">Fecha de alta:</label></li>
+                <li><label for="fecha-de-actualizacion">Fecha de actualizacion:</label></li>
+                <li><label for="nombre-dueño">Nombre Dueño:</label></li>
+                <li><label for="apellido-dueño">Apellido Dueño:</label></li>
+                <li><label for="Dni">Dni dueño:</label></li> 
+                <li><label for="fecha-de-alta">Fecha de alta:</label></li>
+                <li><label for="fecha-de-actualizacion">Fecha de actualizacion:</label></li> 
+            
+             
+        </ul>
+        <ul>
+            {foreach from=$showMascotaYsusDatos item=$mascotaYsusDatos}
+            <li><label>{$mascotaYsusDatos->id}</label></li>
+            <li><label>{$mascotaYsusDatos->nombre_mascota}</label></li>
+            <li><label>{$mascotaYsusDatos->dni_cliente}</label></li>
+            <li><label>{$mascotaYsusDatos->fecha_de_alta}</label></li>
+            <li><label>{$mascotaYsusDatos->fecha_de_actualizacion}</label></li>
+            <li><label>{$mascotaYsusDatos->nombre_cliente}</label></li>
+            <li><label>{$mascotaYsusDatos->apellido}</label></li>
+            <li><label>{$mascotaYsusDatos->dni}</label></li> 
+            <li><label>{$mascotaYsusDatos->fecha_de_alta}</label></li>
+            <li><label>{$mascotaYsusDatos->fecha_de_actualizacion}</label></li> 
+            {/foreach}
+        </ul>
+    
+</div>
 {include file='templates/footer.tpl'}

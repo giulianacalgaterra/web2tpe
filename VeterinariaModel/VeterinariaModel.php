@@ -24,6 +24,7 @@ class VeterinariaModel{
     function getMascotaYsusDatos ($id){
         $sentencia = $this->db->prepare( "SELECT m.id, m.nombre, m.dni_cliente, m.fecha_de_alta, m.fecha_de_actualizacion FROM mascotas m WHERE m.id = ${id}");
         $sentencia->execute(array($id));
+        var_dump($sentencia);
     }
 
 

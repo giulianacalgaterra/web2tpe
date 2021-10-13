@@ -23,13 +23,14 @@ class VeterinariaController{
     function viewMascotas(){
         $todasLasMascotas = $this->model->getMascotas();
         $this->view->showMascotas($todasLasMascotas);
+        
     }
-    
+
     //funcion mostrar una mascota por id
     function showMascotaYsusDatos($id){
         $showMascotaYsusDatos = $this->model->getMascotaYsusDatos($id);
-        $this->view->showMascotas($showMascotaYsusDatos);
-    
+        $this->view->showMascota($showMascotaYsusDatos);
+        var_dump($showMascotaYsusDatos);
     }
 
 

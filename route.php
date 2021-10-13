@@ -31,7 +31,7 @@ $VeterinariaController = new VeterinariaController();
      
      //muestra una mascota y sus datos
      case 'mascota-y-sus-datos': 
-        $VeterinariaController->showMascotaYsusDatos($id);
+        $VeterinariaController->showMascotaYsusDatos($params[0]);
         break;  
 
     
