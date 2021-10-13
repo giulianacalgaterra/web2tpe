@@ -8,6 +8,9 @@ body{
             "header header"
             "main main"
             "footer footer";
+    text-align: center;
+    margin-top: 200px;
+    
 }
 main{
     grid-area: main;
