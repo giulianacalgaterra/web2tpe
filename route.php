@@ -29,16 +29,16 @@ $VeterinariaController = new VeterinariaController();
         $VeterinariaController->viewMascotas();
         break;
      
-     
-     
-     
-     
-        //muestra una mascota y sus datos
+     //muestra una mascota y sus datos
      case 'detalle-de-mascota': 
         $VeterinariaController->showMascotaYsusDatos($id);
         break;  
 
     
+
+
+
+        
     case 'createCliente': 
         $VeterinariaController->createCliente(); 
         break;

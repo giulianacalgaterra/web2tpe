@@ -20,6 +20,16 @@ class VeterinariaModel{
         $tareas = $sentencia->fetchAll(PDO::FETCH_OBJ);
         return $tareas;
     }
+    //trae una mscota por id
+    function getMascotaYsusDatos ($id){
+        $sentencia = $this->db->prepare( "SELECT m.id, m.nombre, m.dni_cliente, m.fecha_de_alta, m.fecha_de_actualizacion FROM mascotas m WHERE m.id = ${id}");
+        $sentencia->execute(array($id));
+    }
+
+
+
+
+
     //muestra las mascotas con sus clientes.
     function getMascotasConClientes (){
         $sentencia = $this->db->prepare( "SELECT c.nombre AS nombre_cliente, c.apellido, c.dni, c.fecha_de_alta, c.fecha_de_actualizacion, m.nombre AS nombre_mascota, m.id, m.dni_cliente, m.fecha_de_alta, m.fecha_de_actualizacion FROM clientes c INNER JOIN mascotas m  ON  c.dni = m.dni_cliente"); 
@@ -81,10 +91,7 @@ class VeterinariaModel{
     }
     
 
-    function getMascotaYsusDatos ($id){
-        $sentencia = $this->db->prepare( "SELECT m.id, m.nombre, m.dni_cliente, m.fecha_de_alta, m.fecha_de_actualizacion FROM mascotas m WHERE m.id = ${id}");
-        $sentencia->execute(array($id));
-    }
+    
 
 
 }

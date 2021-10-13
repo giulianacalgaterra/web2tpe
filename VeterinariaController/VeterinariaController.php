@@ -22,9 +22,15 @@ class VeterinariaController{
     //funcion mostrar todas las mascotas
     function viewMascotas(){
         $todasLasMascotas = $this->model->getMascotas();
-        $this->view->showMascotasYsusDatos($todasLasMascotas);
+        $this->view->showMascotas($todasLasMascotas);
     }
-
+    
+    //funcion mostrar una mascota por id
+    function showMascotaYsusDatos($id){
+        $showMascotaYsusDatos = $this->model->getMascotaYsusDatos($id);
+        $this->view->showMascotas($showMascotaYsusDatos);
+    
+    }
 
 
 
@@ -54,10 +60,5 @@ class VeterinariaController{
     }
 
     
-    //funcion mostrar una mascota por id
-    function showMascotaYsusDatos($id){
-        $showMascotaYsusDatos = $this->model->getMascotaYsusDatos($id);
-        $this->view->showMascotasYsusDatos($showMascotaYsusDatos);
-    
-    }
+   
 }
