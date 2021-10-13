@@ -1,14 +1,17 @@
 {include file='templates/header.tpl'}
 
 
-
 <div class="todos-datos-mascota">
         <table class="table-mascotas">
         <h1>Listado de Mascotas</h1>
             <thead>
                 <tr>
                     <th></th><th colspan="2">Id</th>
-                    <th colspan="2">Nombre </th>  
+                    <th colspan="2">Nombre </th>
+                    <th colspan="2">Dni Cliente</th>
+                    <th colspan="2">Fecha de alta</th>
+                    <th colspan="2">Fecha de actualizacion</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -17,6 +20,9 @@
                 
                 <td colspan="2">{$Mascota->id}</td>
                 <td colspan="2">{$Mascota->nombre}</td>
+                <td colspan="2">{$Mascota->dni_cliente}</td>
+                <td colspan="2">{$Mascota->fecha_de_alta}</td>
+                <td colspan="2">{$Mascota->fecha_de_actualizacion}</td>
                 
             </tr>   
                 {/foreach} 
@@ -25,9 +31,6 @@
         </div>
 
 <div>
-    <input placeholder="Id" type="text" class="inputBuscar">
-    <button class="btnBuscar">Buscar</button>
-    <button class="btn-recargar"><i class="fas fa-sync-alt"></i></button>
     <a href="mascota-con-cliente" > Volver </a>
 </div>
 

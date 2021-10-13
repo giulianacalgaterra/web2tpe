@@ -1,17 +1,20 @@
 {include file='templates/header.tpl'}
 
-
-
 <div class="todos-datos-mascota">
         <table class="table-mascotas">
         <h1>Listado de Mascotas</h1>
             <thead>
                 <tr>
-                    <th></th><th colspan="2">Id</th>
-                    <th colspan="2">Nombre </th>
-                    <th colspan="2">Dni Cliente</th>
-                    <th colspan="2">Fecha de alta</th>
-                    <th colspan="2">Fecha de actualizacion</th>
+                <th></th><th colspan="2">Id</th>
+                <th colspan="2">Nombre </th>
+                <th colspan="2">Dni Cliente</th>
+                <th colspan="2">Fecha de alta</th>
+                <th colspan="2">Fecha de actualizacion</th>
+                <th colspan="2">Nombre</th>
+                <th colspan="2">Apellido</th>
+                <th colspan="2">Dni</th>
+                <th colspan="2">Fecha de alta</th>
+                <th colspan="2">Fecha de actualizacion</th>
                     
                 </tr>
             </thead>
@@ -30,13 +33,4 @@
             </tbody>   
         </table> 
         </div>
-
-<div>
-    <input placeholder="Id" type="text" class="inputBuscar">
-    <button class="btnBuscar">Buscar</button>
-    <button class="btn-recargar"><i class="fas fa-sync-alt"></i></button>
-    <a href="mascota-con-cliente" > Volver </a>
-</div>
-
-
 {include file='templates/footer.tpl'}

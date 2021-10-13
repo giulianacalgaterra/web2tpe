@@ -30,7 +30,7 @@ $VeterinariaController = new VeterinariaController();
         break;
      
      //muestra una mascota y sus datos
-     case 'detalle-de-mascota': 
+     case 'mascota-y-sus-datos': 
         $VeterinariaController->showMascotaYsusDatos($id);
         break;  
 
@@ -38,11 +38,11 @@ $VeterinariaController = new VeterinariaController();
 
 
 
-        
+
     case 'createCliente': 
         $VeterinariaController->createCliente(); 
         break;
-    case 'ingresar':
+    case 'ingresar-nuevo':
         $VeterinariaController->ingresarCliente();
         break;
 
