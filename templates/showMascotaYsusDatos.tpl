@@ -1,5 +1,5 @@
 {include file='templates/header.tpl'}
-{include_php file='./VeterinariaController/mostrarporid.php' }
+
 
 <div class="datos-mascota">
         
