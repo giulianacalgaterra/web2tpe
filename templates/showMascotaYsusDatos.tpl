@@ -11,4 +11,7 @@
                 <li><label for="fecha-de-actualizacion">Fecha de actualizacion:{$showMascotaYsusDatos->fecha_de_actualizacion}</label></li>    
         </ul>
 </div>
+<div>
+    <a href="detalle-de-mascota" > Volver </a>
+</div>
 {include file='templates/footer.tpl'}

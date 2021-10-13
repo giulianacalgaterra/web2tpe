@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-13 23:12:09
+/* Smarty version 3.1.39, created on 2021-10-13 23:22:31
   from 'D:\xampp\htdocs\web2tpe\templates\showMascotaYsusDatos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61674ba9ef24d9_85559562',
+  'unifunc' => 'content_61674e1723d842_62805513',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ef48d7386d025ec7b28440ceb6e8d4e186f769ad' => 
     array (
       0 => 'D:\\xampp\\htdocs\\web2tpe\\templates\\showMascotaYsusDatos.tpl',
-      1 => 1634159526,
+      1 => 1634160147,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_61674ba9ef24d9_85559562 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61674e1723d842_62805513 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -41,6 +41,9 @@ $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cach
                 <li><label for="fecha-de-actualizacion">Fecha de actualizacion:<?php echo $_smarty_tpl->tpl_vars['showMascotaYsusDatos']->value->fecha_de_actualizacion;?>
 </label></li>    
         </ul>
+</div>
+<div>
+    <a href="detalle-de-mascota" > Volver </a>
 </div>
 <?php $_smarty_tpl->_subTemplateRender('file:templates/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }

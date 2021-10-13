@@ -1,6 +1,7 @@
 <?php
-require_once "./MascotasModel/MascotasModel.php";
-require_once "./MascotasView/MascotasView.php";
+require_once "./VeterinariaModel/MascotasModel.php";
+require_once "./VeterinariaView/MascotasView.php";
+
 
 class MascotasController{
 
@@ -11,8 +12,9 @@ class MascotasController{
     function __construct(){
         $this->model = new MascotasModel();
         $this->view = new MascotasView();
+
     }
-    //funcion mostrar todas las mascotas
+    //funcion ver todas las mascotas
     function viewMascotas(){
         $todasLasMascotas = $this->model->getMascotas();
         $this->view->showMascotas($todasLasMascotas);
@@ -24,12 +26,5 @@ class MascotasController{
         $showMascotaYsusDatos = $this->model->getMascotaYsusDatos($id);
         $this->view->showMascota($showMascotaYsusDatos);
     }
-
-
-
-
-
-
-    
-   
+  
 }

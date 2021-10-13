@@ -18,7 +18,7 @@
             <div class="logo-imagen"><img src="images/logo2original.jpg" alt="logo" height="85px"></div>
             <nav>
                 <ul>
-                    <li><a aria-current="page" href="mascota-con-cliente"> Mascotas con Clientes </a></li>
+                    <li><a aria-current="page" href="detalle-de-cliente"> Detalle de Cliente </a></li>
                     <li><a href="detalle-de-mascota">Detalle de Mascota</a></li>
                     <li><a href="listado-clientes">Listado de Clientes</a></li>
                     <li><a href="Mascota-X-Cliente">Mascota y su Cliente</a></li>

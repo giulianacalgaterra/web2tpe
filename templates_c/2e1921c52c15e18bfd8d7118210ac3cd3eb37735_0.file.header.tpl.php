@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-13 18:08:17
+/* Smarty version 3.1.39, created on 2021-10-14 00:17:20
   from 'D:\xampp\htdocs\web2tpe\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61670471491dd2_34317256',
+  'unifunc' => 'content_61675af07434b2_12130438',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2e1921c52c15e18bfd8d7118210ac3cd3eb37735' => 
     array (
       0 => 'D:\\xampp\\htdocs\\web2tpe\\templates\\header.tpl',
-      1 => 1634141293,
+      1 => 1634163434,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61670471491dd2_34317256 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61675af07434b2_12130438 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +42,7 @@ function content_61670471491dd2_34317256 (Smarty_Internal_Template $_smarty_tpl)
             <div class="logo-imagen"><img src="images/logo2original.jpg" alt="logo" height="85px"></div>
             <nav>
                 <ul>
-                    <li><a aria-current="page" href="mascota-con-cliente"> Mascotas con Clientes </a></li>
+                    <li><a aria-current="page" href="detalle-de-cliente"> Detalle de Cliente </a></li>
                     <li><a href="detalle-de-mascota">Detalle de Mascota</a></li>
                     <li><a href="listado-clientes">Listado de Clientes</a></li>
                     <li><a href="Mascota-X-Cliente">Mascota y su Cliente</a></li>

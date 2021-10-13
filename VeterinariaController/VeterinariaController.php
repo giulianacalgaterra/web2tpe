@@ -4,7 +4,7 @@ class VeterinariaController{
 
     private $model;
     private $view;
-
+/*
     //construye las modelos el viwe
     function __construct(){
         $this->model = new VeterinariaModel();
@@ -16,25 +16,6 @@ class VeterinariaController{
         $clientesConMascotas = $this->model->getMascotasConClientes();
         $this->view->showMascotaConCliente($clientesConMascotas);
     }
-
-    //funcion mostrar todas las mascotas
-    function viewMascotas(){
-        $todasLasMascotas = $this->model->getMascotas();
-        $this->view->showMascotas($todasLasMascotas);
-        
-    }
-
-    //funcion mostrar una mascota por id
-    function showMascotaYsusDatos($id){
-        $showMascotaYsusDatos = $this->model->getMascotaYsusDatos($id);
-        var_dump($showMascotaYsusDatos);
-        $this->view->showMascota($showMascotaYsusDatos);
-    }
-
-
-
-
-
 
     //funcion mostrar un cliente     
     function viewCliente($dni){
@@ -57,7 +38,7 @@ class VeterinariaController{
         $mascotas=$this->model->getMascotas();
         $this->view->ingresar($clientes, $mascotas);
     }
-
+*/
     
    
 }

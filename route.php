@@ -1,5 +1,5 @@
 <?php
-require_once "./MascotasController/MascotasController.php";
+require_once "./VeterinariaController/MascotasController.php";
 
 
 
@@ -18,6 +18,8 @@ $params = explode('/', $action);
 
 $MascotasController = new MascotasController();
 
+
+
 // determina que camino seguir según la acción
  switch ($params[0]) {
      
@@ -31,9 +33,19 @@ $MascotasController = new MascotasController();
         $MascotasController->showMascotaYsusDatos($params[1]);
         break;  
 
-    
+    //muestra todos los clientes
+    case 'detalle-de-cliente': 
+        $ClientesController->viewClientes();
+        break;
 
-
+    //muestra una mascota y sus datos
+    case 'cliente-y-sus-datos': 
+        $ClientesController->showClienteYsusDatos($params[1]);
+        break;
+        
+        
+        
+        
         /*
        //muestra todos los items cargados
     case 'mascota-con-cliente': 
