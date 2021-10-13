@@ -1,6 +1,4 @@
 <?php
-require_once "./VeterinariaModel/VeterinariaModel.php";
-require_once "./VeterinariaView/VeterinariaView.php";
 
 class VeterinariaController{
 
@@ -29,8 +27,8 @@ class VeterinariaController{
     //funcion mostrar una mascota por id
     function showMascotaYsusDatos($id){
         $showMascotaYsusDatos = $this->model->getMascotaYsusDatos($id);
-        $this->view->showMascota($showMascotaYsusDatos);
         var_dump($showMascotaYsusDatos);
+        $this->view->showMascota($showMascotaYsusDatos);
     }
 
 

@@ -1,5 +1,6 @@
 <?php
-require_once "./VeterinariaController/VeterinariaController.php";
+require_once "./MascotasController/MascotasController.php";
+
 
 
 define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']).'/');
@@ -9,36 +10,35 @@ define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] 
 if (!empty($_GET['action'])) {
     $action = $_GET['action'];
 } else {
-    $action = 'mascota-con-cliente'; // acción por defecto si no envían
+    $action = 'detalle-de-mascota'; // acción por defecto si no envían
 }
 
 
 $params = explode('/', $action);
 
-$VeterinariaController = new VeterinariaController();
-
+$MascotasController = new MascotasController();
 
 // determina que camino seguir según la acción
  switch ($params[0]) {
-     //muestra todos los items cargados
-     case 'mascota-con-cliente': 
-        $VeterinariaController->showMascotaConCliente();
-        break;
+     
      //muestra todas las mascotas
     case 'detalle-de-mascota': 
-        $VeterinariaController->viewMascotas();
+        $MascotasController->viewMascotas();
         break;
      
      //muestra una mascota y sus datos
      case 'mascota-y-sus-datos': 
-        $VeterinariaController->showMascotaYsusDatos($params[0]);
+        $MascotasController->showMascotaYsusDatos($params[1]);
         break;  
 
     
 
 
-
-
+        /*
+       //muestra todos los items cargados
+    case 'mascota-con-cliente': 
+        $VeterinariaController->showMascotaConCliente();
+        break;
     case 'createCliente': 
         $VeterinariaController->createCliente(); 
         break;

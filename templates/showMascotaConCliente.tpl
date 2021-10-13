@@ -18,13 +18,13 @@
                     </thead>
                     <tbody>
                         {foreach from=$clientesConMascotas item=$mascotaConCliente}
-                            <tr>
-
-                                <td colspan="2"><a href="mascota-y-sus-datos">{$mascotaConCliente->id}</a></td>
-                                <td colspan="2">{$mascotaConCliente->nombre_mascota}</td>
+                            
+                           <tr>
+                                <td colspan="2"><a href="mascota-y-sus-datos/{$mascotaConCliente->id}">{$mascotaConCliente->nombre_mascota}</a></td>
                                 <td colspan="2">{$mascotaConCliente->nombre_cliente}</td>
                                 <td colspan="2">{$mascotaConCliente->apellido}</td>
                             </tr>
+                            
                         {/foreach}
                     </tbody>
                 </table>
