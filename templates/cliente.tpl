@@ -7,7 +7,7 @@
     <h2>fecha de alta: {$clientes->fecha_de_alta}</h2>
     <h2>fecha de actualizacion: {$clientes->fecha_de_actualizacion}</h2>
 
-    <a href="home" > Volver </a>
+    <a href= "mascota-con-cliente" > Volver </a>
 </div>
 
 {include file='templates/footer.tpl'}

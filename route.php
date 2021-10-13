@@ -9,7 +9,7 @@ define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] 
 if (!empty($_GET['action'])) {
     $action = $_GET['action'];
 } else {
-    $action = 'home'; // acción por defecto si no envían
+    $action = 'mascota-con-cliente'; // acción por defecto si no envían
 }
 
 
@@ -20,9 +20,25 @@ $VeterinariaController = new VeterinariaController();
 
 // determina que camino seguir según la acción
  switch ($params[0]) {
-     case 'home': 
-        $VeterinariaController->showHome();
+     //muestra todos los items cargados
+     case 'mascota-con-cliente': 
+        $VeterinariaController->showMascotaConCliente();
         break;
+     //muestra todas las mascotas
+    case 'detalle-de-mascota': 
+        $VeterinariaController->viewMascotas();
+        break;
+     
+     
+     
+     
+     
+        //muestra una mascota y sus datos
+     case 'detalle-de-mascota': 
+        $VeterinariaController->showMascotaYsusDatos($id);
+        break;  
+
+    
     case 'createCliente': 
         $VeterinariaController->createCliente(); 
         break;
@@ -33,9 +49,9 @@ $VeterinariaController = new VeterinariaController();
     case 'viewcliente':
             $VeterinariaController->viewCliente($params[1]);
             break;
-    case 'viewmascotas':
+    /*case 'viewmascotas':
             $VeterinariaController->viewMascota($params[1], $params[2]);
-                break;
+                break;*/
     default: 
         echo('404 Page not found'); 
         break;

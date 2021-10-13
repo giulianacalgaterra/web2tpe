@@ -8,11 +8,19 @@ class VeterinariaView{
         $this->smarty = new Smarty();
     }
 
-    function showClientes($clientes,$mascotas){
-        $this->smarty->assign('clientes', $clientes);
-        $this->smarty->assign('mascotas', $mascotas);
-        $this->smarty->display('templates/home.tpl');
+    function showMascotaConCliente($clientesConMascotas){
+        $this->smarty->assign('clientesConMascotas', $clientesConMascotas);
+        $this->smarty->display('templates/showMascotaConCliente.tpl');
     }
+
+    function showMascotaYsusDatos($todasLasMascotas){
+        $this->smarty->assign('todasLasMascotas', $todasLasMascotas);
+        $this->smarty->display('templates/showMascotaYsusDatos.tpl');
+     }
+
+
+
+
 
     function ingresar($clientes, $mascotas){
         $this->smarty->assign('clientes', $clientes);
@@ -29,8 +37,8 @@ class VeterinariaView{
         $this->smarty->display('templates/cliente.tpl');
      }
 
-     function showMascota($mascotas){
-        $this->smarty->assign('mascotas', $mascotas);
-        $this->smarty->display('templates/mascota.tpl');
-     }
+     /*function showMascotaYsusDatos($showMascotaYsusDatos){
+        $this->smarty->assign('showMascotaYsusDatos', $showMascotaYsusDatos);
+        $this->smarty->display('templates/showMascotaYsusDatos.tpl');
+     }*/
 }

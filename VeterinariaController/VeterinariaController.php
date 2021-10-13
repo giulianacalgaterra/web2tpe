@@ -13,12 +13,24 @@ class VeterinariaController{
         $this->view = new VeterinariaView();
     }
 
-    //funcion mostrar home
-    function showHome(){
-        $clientes = $this->model->getClientes();
-        $mascotas = $this->model->getMascotas();
-        $this->view->showClientes($clientes, $mascotas);
+    //funcion mostrar toda la tabla
+    function showMascotaConCliente(){
+        $clientesConMascotas = $this->model->getMascotasConClientes();
+        $this->view->showMascotaConCliente($clientesConMascotas);
     }
+
+    //funcion mostrar todas las mascotas
+    function viewMascotas(){
+        $todasLasMascotas = $this->model->getMascotas();
+        $this->view->showMascotaYsusDatos($todasLasMascotas);
+    }
+
+
+
+
+
+
+
     //funcion mostrar un cliente     
     function viewCliente($dni){
         $clientes = $this->model->getClientes($dni);
@@ -41,10 +53,11 @@ class VeterinariaController{
         $this->view->ingresar($clientes, $mascotas);
     }
 
-    //funcion mostrar una mascota
-    function viewMascota($id, $dni_cliente){
-        $mascotas = $this->model->getMascotas($id);
-        $mascotas = $this->model->getMascotas($dni_cliente);
-        $this->view->showMascota($mascotas);
+    
+    //funcion mostrar una mascota por id
+    function showMascotaYsusDatos($id){
+        $showMascotaYsusDatos = $this->model->getMascotaYsusDatos($id);
+        $this->view->showMascotaYsusDatos($showMascotaYsusDatos);
+    
     }
 }
