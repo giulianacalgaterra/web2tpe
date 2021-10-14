@@ -15,6 +15,6 @@ class MascotasView{
 
     function showMascota($showMascotaYsusDatos){
         $this->smarty->assign('showMascotaYsusDatos', $showMascotaYsusDatos);
-        $this->smarty->display('templates/MascotaYsusDatos.tpl');
+        $this->smarty->display('templates/mascotaYsusDatos.tpl');
     }
 }

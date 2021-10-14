@@ -23,6 +23,14 @@ class ClientesModel{
         return $tareas;
     }
 
+    
+
+
+
+
+
+
+
      //eliminar un cliente
      function deleteClienteFromDB($dni){
         $sentencia = $this->db->prepare("DELETE FROM clientes  WHERE cliente.dni =${dni}");

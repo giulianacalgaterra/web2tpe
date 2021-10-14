@@ -27,9 +27,5 @@
         </table> 
         </div>
 
-<div>
-    <a href="mascota-con-cliente" > Volver </a>
-</div>
-
 
 {include file='templates/footer.tpl'}

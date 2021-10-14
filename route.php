@@ -1,7 +1,7 @@
 <?php
-require_once "./VeterinariaController/MascotasController.php";
-require_once "./VeterinariaController/ClientesController.php";
-
+require_once "./Controller/MascotasController.php";
+require_once "./Controller/ClientesController.php";
+require_once "./Controller/LoginController.php";
 
 define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']).'/');
 
@@ -10,7 +10,7 @@ define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] 
 if (!empty($_GET['action'])) {
     $action = $_GET['action'];
 } else {
-    $action = 'detalle-de-mascota'; // acción por defecto si no envían
+    $action = 'detalle-de-cliente'; // acción por defecto si no envían
 }
 
 
@@ -18,7 +18,7 @@ $params = explode('/', $action);
 
 $MascotasController = new MascotasController();
 $ClientesController = new ClientesController();
-
+$LoginController = new LoginController();
 
 // determina que camino seguir según la acción
  switch ($params[0]) {
@@ -48,6 +48,22 @@ $ClientesController = new ClientesController();
         $ClientesController->showClientesYsusMascotas();
         break;    
         
+
+    case 'login': 
+            $LoginController->login();
+            break;
+    case 'logout': 
+            $LoginController->logout();
+            break;
+        case 'verify': 
+            $LoginController->verifyLogin();
+            break;
+        case 'createUser':
+            $LoginController->createUser();
+            break;
+        case 'createLogin':
+            $LoginController->createLogin();
+            break;     
         
         /*
        //muestra todos los items cargados

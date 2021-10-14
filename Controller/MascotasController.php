@@ -1,6 +1,6 @@
 <?php
-require_once "./VeterinariaModel/MascotasModel.php";
-require_once "./VeterinariaView/MascotasView.php";
+require_once "./Model/MascotasModel.php";
+require_once "./View/MascotasView.php";
 
 
 class MascotasController{
