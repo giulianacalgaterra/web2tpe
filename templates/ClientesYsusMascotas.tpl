@@ -13,21 +13,31 @@
                             <th colspan="2">Nombre</th>
                             <th colspan="2">Apellido</th>
                             <th colspan="2">DNI</th>
-                            <th colspan="2">ID</th>
                             <th colspan="2">Nombre de la Mascota</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {foreach from=$todosLosClientes  item=$cliente}
+                        <tr>
+                            {foreach from=$todosLosClientes  item=$cliente}
                                 <td colspan="2">{$cliente->nombre}</td>
                                 <td colspan="2">{$cliente->apellido}</td>
                                 <td colspan="2">{$cliente->dni}</td>
+                            <tr>
                                 {foreach from=$todasLasMascotas  item=$mascota}
-                                    <td colspan="2">{$mascota->id}</td>
-                                    <td colspan="2">{$mascota->nombre}</td>
-                                {/foreach}
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td> 
+                                    {{if $cliente->dni == $mascota->dni_cliente}}
+                                        <td colspan="2">{$mascota->nombre}</td>
+                                    {{/if}}
                                 </tr>
-                        {/foreach}
+
+                                {/foreach}
+                            </tr>
+
+                            {/foreach}
+                        </tr>
                     </tbody>
                 </table>
             </div>
