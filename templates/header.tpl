@@ -20,8 +20,7 @@
                 <ul>
                     <li><a aria-current="page" href="detalle-de-cliente"> Detalle de Cliente </a></li>
                     <li><a href="detalle-de-mascota">Detalle de Mascota</a></li>
-                    <li><a href="listado-clientes">Listado de Clientes</a></li>
-                    <li><a href="Mascota-X-Cliente">Mascota y su Cliente</a></li>
+                    <li><a href="clientes-y-sus-mascotas">Clientes y sus Mascotas</a></li>
                     <li><a href="ingresar-nuevo">Ingresar nuevo</a></li>
                     <li><a href="">Cerrar sesion</a></li>
                 </ul>

@@ -38,12 +38,15 @@ $ClientesController = new ClientesController();
         $ClientesController->viewClientes();
         break;
 
-    //muestra una mascota y sus datos
+    //muestra un cliente y sus datos
     case 'cliente-y-sus-datos': 
         $ClientesController->showClienteYsusDatos($params[1]);
         break;
         
-        
+    //muestra clientes y sus mascotas
+    case 'clientes-y-sus-mascotas': 
+        $ClientesController->showClientesYsusMascotas();
+        break;    
         
         
         /*

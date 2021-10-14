@@ -15,8 +15,16 @@ class ClientesView{
 
     function showCliente($showClienteYsusDatos){
         $this->smarty->assign('showClienteYsusDatos', $showClienteYsusDatos);
-        $this->smarty->display('templates/showClienteYsusDatos.tpl');
+        $this->smarty->display('templates/ClienteYsusDatos.tpl');
     }
+
+    function showClientesYsusMascotas( $todosLosClientes ,$todasLasMascotas){
+        $this->smarty->assign('todosLosClientes', $todosLosClientes);
+        $this->smarty->assign('todasLasMascotas', $todasLasMascotas);
+        $this->smarty->display('templates/ClientesYsusMascotas.tpl');
+    }
+
+
 
     function deleteCliente($deleteClienteYsusDatos){
         $this->smarty->assign('$deleteClienteYsusDatos', $deleteClienteYsusDatos);

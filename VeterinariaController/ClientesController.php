@@ -1,17 +1,22 @@
 <?php
 require_once "./VeterinariaModel/ClientesModel.php";
 require_once "./VeterinariaView/ClientesView.php";
+require_once "./VeterinariaModel/MascotasModel.php";
+require_once "./VeterinariaView/MascotasView.php";
 
 class ClientesController{
 
     private $model;
     private $view;
-  
+    private $mascotasModel;
+    private $mascotasView;
+
     //construye las modelos el view
     function __construct(){
         $this->model = new ClientesModel();
         $this->view = new ClientesView();
-        
+        $this->mascotasModel = new mascotasModel();
+        $this->mascotasView = new mascotasView();
     }
     //funcion mostrar todos los clientes
     function viewClientes(){
@@ -26,10 +31,18 @@ class ClientesController{
         $this->view->showCliente($showClienteYsusDatos);
     }
 
+   //funcion mostrar un cliente y sus mascotas
+    function showClientesYsusMascotas(){
+        $todosLosClientes = $this->model->getClientes();
+        $todasLasMascotas = $this->mascotasModel->getMascotas();
+        $this->view->showClientesYsusMascotas($todosLosClientes, $todasLasMascotas);
+    }
+   
+
+
     //funcion eliminar un cliente por dni
     function deleteClienteYsusDatos($dni){
        $deleteClienteYsusDatos = $this->model->deleteClienteFromDB($dni);
        $this->view->deleteCliente($deleteClienteYsusDatos); 
     }
-  
 }
