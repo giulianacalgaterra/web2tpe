@@ -1,6 +1,6 @@
 <?php
 require_once "./VeterinariaController/MascotasController.php";
-
+require_once "./VeterinariaController/ClientesController.php";
 
 
 define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']).'/');
@@ -17,7 +17,7 @@ if (!empty($_GET['action'])) {
 $params = explode('/', $action);
 
 $MascotasController = new MascotasController();
-
+$ClientesController = new ClientesController();
 
 
 // determina que camino seguir según la acción
