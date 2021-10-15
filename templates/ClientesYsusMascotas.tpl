@@ -30,12 +30,14 @@
                                     <td colspan="2"></td> 
                                     {{if $cliente->dni == $mascota->dni_cliente}}
                                         <td colspan="2">{$mascota->nombre}</td>
+                                        <td colspan="2"><a><i class="fas fa-trash-alt"></i></a></td>
                                     {{/if}}
+                                    
                                 </tr>
 
                                 {/foreach}
                             </tr>
-
+                            
                             {/foreach}
                         </tr>
                     </tbody>

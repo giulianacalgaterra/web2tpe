@@ -3,6 +3,7 @@ require_once "./Model/ClientesModel.php";
 require_once "./View/ClientesView.php";
 require_once "./Model/MascotasModel.php";
 require_once "./View/MascotasView.php";
+require_once "./Model/userModel.php";
 
 class ClientesController{
 
@@ -10,6 +11,7 @@ class ClientesController{
     private $view;
     private $mascotasModel;
     private $mascotasView;
+    private $userModel;
 
     //construye las modelos el view
     function __construct(){
@@ -17,6 +19,7 @@ class ClientesController{
         $this->view = new ClientesView();
         $this->mascotasModel = new mascotasModel();
         $this->mascotasView = new mascotasView();
+        $this->userModel = new userModel();
     }
     //funcion mostrar todos los clientes
     function viewClientes(){
@@ -34,8 +37,10 @@ class ClientesController{
    //funcion mostrar un cliente y sus mascotas
     function showClientesYsusMascotas(){
         $todosLosClientes = $this->model->getClientes();
-        $todasLasMascotas = $this->mascotasModel->getMascotas();
-        $this->view->showClientesYsusMascotas($todosLosClientes, $todasLasMascotas);
+        $todasLasMascotas = $this->mascotasModel->getMascotas(); 
+        $isLogged = $this->userModel->isLogged();
+        $this->view->showClientesYsusMascotas($todosLosClientes, $todasLasMascotas, $isLogged);
+       
     }
    
     //funcion eliminar un cliente por dni

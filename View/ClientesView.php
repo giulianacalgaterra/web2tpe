@@ -18,10 +18,12 @@ class ClientesView{
         $this->smarty->display('templates/clienteYsusDatos.tpl');
     }
 
-    function showClientesYsusMascotas( $todosLosClientes ,$todasLasMascotas){
+    function showClientesYsusMascotas( $todosLosClientes ,$todasLasMascotas ,$isLogged){
         $this->smarty->assign('todosLosClientes', $todosLosClientes);
         $this->smarty->assign('todasLasMascotas', $todasLasMascotas);
+        $this->smarty->assign('logged',$isLogged);
         $this->smarty->display('templates/clientesYsusMascotas.tpl');
+        
     }
 
 

@@ -24,6 +24,7 @@ class LoginView{
         $this->smarty->display('templates/registro.tpl');
 
     }
+
     function showCreateLogin($error=""){
         $this->smarty->assign('titulo','CREAR USUARIO');
         $this->smarty->assign('error',$error);
@@ -40,4 +41,7 @@ class LoginView{
         $this->smarty->display('templates/header.tpl');
     }
     
+    
+
+
 }

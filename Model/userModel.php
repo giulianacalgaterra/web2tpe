@@ -22,7 +22,14 @@
 
         function insertUser($userEmail,$userPassword,$userNombre){
             $query = $this->db->prepare('INSERT INTO user (email, password,nombre_apellido) VALUES (?,?,?)');
-            $query->execute([$userEmail,$userPassword,$userNombre]);
-            
+            $query->execute([$userEmail,$userPassword,$userNombre]);  
         }
+
+        function isLogged(){
+            session_start();
+            if (isset($_SESSION['email'])){session_abort(); return true;}
+                else{ session_abort(); return false;}
+        }
+
+
     }

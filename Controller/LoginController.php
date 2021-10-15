@@ -39,6 +39,9 @@ require_once "./View/LoginView.php";
             }
         }
 
+        
+
+
         function logout(){
             session_start();
             session_destroy();
