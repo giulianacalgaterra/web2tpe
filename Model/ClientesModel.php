@@ -23,17 +23,9 @@ class ClientesModel{
         return $tareas;
     }
 
-    
-
-
-
-
-
-
-
-     //eliminar un cliente
+    //eliminar un cliente
      function deleteClienteFromDB($dni){
-        $sentencia = $this->db->prepare("DELETE FROM clientes  WHERE cliente.dni =${dni}");
+        $sentencia = $this->db->prepare("DELETE FROM veterinaria.clientes  WHERE dni = ${dni}");
         $sentencia->execute(array($dni));
         $tarea = $sentencia->fetch(PDO::FETCH_OBJ);
         return $tarea;

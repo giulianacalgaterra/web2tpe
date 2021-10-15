@@ -20,7 +20,7 @@
                 <td colspan="2">{$Cliente->nombre}</td>
                 <td colspan="2">{$Cliente->apellido}</td>
                 <td colspan="2">{$Cliente->fecha_de_alta}</td>
-                <td colspan="2">{$Cliente->fecha_de_actualizacion}</td>
+                <td colspan="2">{$Cliente->fecha_de_actualizacion}<i class="fas fa-trash-alt"></i></td> 
             </tr>   
                 {/foreach} 
             </tbody>   

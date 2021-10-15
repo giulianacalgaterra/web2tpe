@@ -38,11 +38,9 @@ class ClientesController{
         $this->view->showClientesYsusMascotas($todosLosClientes, $todasLasMascotas);
     }
    
-
-
     //funcion eliminar un cliente por dni
-    function deleteClienteYsusDatos($dni){
-       $deleteClienteYsusDatos = $this->model->deleteClienteFromDB($dni);
-       $this->view->deleteCliente($deleteClienteYsusDatos); 
+   function deleteClienteYsusDatos($dni){
+    $deleteClienteYsusDatos = $this->model->deleteClienteFromDB($dni);
+    $this->view->deleteCliente($deleteClienteYsusDatos); 
     }
 }
