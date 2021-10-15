@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-14 18:08:29
+/* Smarty version 3.1.39, created on 2021-10-15 02:46:41
   from 'D:\xampp\htdocs\web2tpe\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616855fdaeb8a1_03314596',
+  'unifunc' => 'content_6168cf7189b1f2_00012977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2e1921c52c15e18bfd8d7118210ac3cd3eb37735' => 
     array (
       0 => 'D:\\xampp\\htdocs\\web2tpe\\templates\\header.tpl',
-      1 => 1634227665,
+      1 => 1634258788,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616855fdaeb8a1_03314596 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6168cf7189b1f2_00012977 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -45,14 +45,9 @@ function content_616855fdaeb8a1_03314596 (Smarty_Internal_Template $_smarty_tpl)
                     <li><a aria-current="page" href="detalle-de-cliente"> Detalle de Cliente </a></li>
                     <li><a href="detalle-de-mascota">Detalle de Mascota</a></li>
                     <li><a href="clientes-y-sus-mascotas">Clientes y sus Mascotas</a></li>
-                    <li><a href="ingresar-nuevo">Ingresar nuevo</a></li>
-                    <li><a href="">Cerrar sesion</a></li>
+                    <li><a href="login">Ingresar</a></li>
+                    <li><a href="logout">Cerrar sesion</a></li>
                 </ul>
             </nav>
-            <div class="login">
-                <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="Contraseña">
-                <button type="submit" class="btn btn-login">Login</button>
-            </div>
 </header><?php }
 }

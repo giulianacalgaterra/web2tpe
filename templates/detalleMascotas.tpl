@@ -6,7 +6,7 @@
         <h1>Listado de Mascotas</h1>
             <thead>
                 <tr>
-                    <th></th><th colspan="2">Id</th>
+                    <th></th>
                     <th colspan="2">Nombre </th>
                     <th colspan="2">Dni Cliente</th>
                     <th colspan="2">Fecha de alta</th>

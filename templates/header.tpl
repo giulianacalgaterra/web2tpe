@@ -21,13 +21,8 @@
                     <li><a aria-current="page" href="detalle-de-cliente"> Detalle de Cliente </a></li>
                     <li><a href="detalle-de-mascota">Detalle de Mascota</a></li>
                     <li><a href="clientes-y-sus-mascotas">Clientes y sus Mascotas</a></li>
-                    <li><a href="ingresar-nuevo">Ingresar nuevo</a></li>
-                    <li><a href="">Cerrar sesion</a></li>
+                    <li><a href="login">Ingresar</a></li>
+                    <li><a href="logout">Cerrar sesion</a></li>
                 </ul>
             </nav>
-            <div class="login">
-                <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="Contraseña">
-                <button type="submit" class="btn btn-login">Login</button>
-            </div>
 </header>

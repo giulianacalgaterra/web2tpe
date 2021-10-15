@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-14 18:09:23
+/* Smarty version 3.1.39, created on 2021-10-15 02:49:04
   from 'D:\xampp\htdocs\web2tpe\templates\detalleMascotas.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61685633168591_35424994',
+  'unifunc' => 'content_6168d0007bc1f0_67626329',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce773273e327e6b2fa439ce3d5bda9e1005921d4' => 
     array (
       0 => 'D:\\xampp\\htdocs\\web2tpe\\templates\\detalleMascotas.tpl',
-      1 => 1634227759,
+      1 => 1634258941,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_61685633168591_35424994 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6168d0007bc1f0_67626329 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -32,7 +32,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cach
         <h1>Listado de Mascotas</h1>
             <thead>
                 <tr>
-                    <th></th><th colspan="2">Id</th>
+                    <th></th>
                     <th colspan="2">Nombre </th>
                     <th colspan="2">Dni Cliente</th>
                     <th colspan="2">Fecha de alta</th>
