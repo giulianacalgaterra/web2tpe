@@ -48,4 +48,6 @@ class ClientesController{
     $deleteClienteYsusDatos = $this->model->deleteClienteFromDB($dni);
     $this->view->deleteCliente($deleteClienteYsusDatos); 
     }
+
+    
 }

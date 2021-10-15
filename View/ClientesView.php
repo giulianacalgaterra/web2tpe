@@ -26,8 +26,6 @@ class ClientesView{
         
     }
 
-
-
     function deleteCliente($deleteClienteYsusDatos){
         $this->smarty->assign('$deleteClienteYsusDatos', $deleteClienteYsusDatos);
         $this->smarty->display();
