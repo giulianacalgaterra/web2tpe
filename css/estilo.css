@@ -12,6 +12,20 @@ body{
     margin-top: 200px;
     
 }
+header{
+    grid-template-columns: 1fr 1fr;
+    grid-area: header;
+    background: rgb(255, 255, 255);
+    padding: 0.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 main{
     grid-area: main;
     background-size: cover;
@@ -35,18 +49,7 @@ li{
     display: block;
     list-style: none;
 }
-header{
-    grid-template-columns: 1fr 1fr;
-    grid-area: header;
-    background: rgb(255, 255, 255);
-    padding: 0.5rem;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    justify-content: space-between;
-    align-items: center;
-}
+
 footer{
     grid-area: footer;
     padding: 4rem 0; 

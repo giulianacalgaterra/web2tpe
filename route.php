@@ -63,7 +63,11 @@ $LoginController = new LoginController();
             break;
         case 'createLogin':
             $LoginController->createLogin();
-            break;     
+            break;  
+            
+        case 'deleteClienteYsusDatos': 
+            $ClientesController->deleteClienteYsusDatos($params[1]); 
+            break;
         
         /*
        //muestra todos los items cargados
